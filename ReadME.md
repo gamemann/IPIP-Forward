@@ -33,4 +33,5 @@ gcc-7 -g IPIPForward.c -g common.c -o IPIPForward -lpthread
 I also included warnings to ensure I wasn't missing anything there. However, this is the basic build command.
 
 ## Credits
-* [Christian Deacon](https://www.linkedin.com/in/christian-deacon-902042186/)
+* [Christian Deacon](https://www.linkedin.com/in/christian-deacon-902042186/) - Creator
+* [Dreae](https://github.com/dreae) - For 'csum.h' file for calculating checksums, etc.
