@@ -17,7 +17,7 @@ static int packetCount = 0;
 static int sentPacketCount = 0;
 
 // Both source and destination MAC addresses for Ethernet header.
-static unsigned char routerMac[ETH_ALEN];
+extern unsigned char routerMac[ETH_ALEN];
 static unsigned char srcMac[ETH_ALEN];
 
 // Fanout ID for AF_PACKET socket.

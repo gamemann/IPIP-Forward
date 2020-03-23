@@ -7,6 +7,12 @@
 
 #endif
 
+#ifndef ETH_ALEN
+#define ETH_ALEN 6
+#endif
+
+unsigned char routerMac[ETH_ALEN];
+
 void GetGatewayMAC()
 {
     char cmd[] = "ip neigh | grep \"$(ip -4 route list 0/0|cut -d' ' -f3) \"|cut -d' ' -f5|tr '[a-f]' '[A-F]'";
@@ -24,6 +30,8 @@ void GetGatewayMAC()
 
         pclose(fp);
     }
+
+    printf("executed...\n");
 }
 
 void shiftChar(char *arr, int size, int dataLen)
