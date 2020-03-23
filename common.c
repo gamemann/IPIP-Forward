@@ -30,8 +30,6 @@ void GetGatewayMAC()
 
         pclose(fp);
     }
-
-    printf("executed...\n");
 }
 
 void shiftChar(char *arr, int size, int dataLen)
